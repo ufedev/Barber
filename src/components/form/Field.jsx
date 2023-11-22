@@ -41,7 +41,7 @@ const Field = ({ type = 'text', value, name, onChange, placeholder = '', min = 0
                 <span className="material-symbols-outlined border-r-[1px] p-2 border-r-slate-300">
                     {icon}
                 </span>
-                <input className='bg-inherit flex-1 h-full outline-none p-2 rounded' type={`${type}`} value={value} name={`${name}`} id={name} onChange={onChange} placeholder={placeholder} min={min} />
+                <input className='bg-inherit flex-1 h-full outline-none p-2 rounded' type={`${type}`} value={value} name={`${name}`} id={name} onChange={onChange} placeholder={placeholder} min={`${min}`} />
             </div>
         </div>
     )
